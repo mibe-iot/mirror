@@ -1,14 +1,4 @@
 /**
- * Application settings
- * @typedef {BLESettings & WifiSettings & MQTTSettings}
- */
-export const Settings = {
-  ...BLESettings,
-  ...WifiSettings,
-  ...MQTTSettings,
-}
-
-/**
  * WiFi Application Settings
  * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: WifiSettings.onWifiConnected, SSID: string, Password: string, onWifiPrepared: WifiSettings.onWifiPrepared}}
  */
@@ -42,6 +32,16 @@ export const BLESettings = {
    * @callback onBLEConnected
    */
   onBLEConnected: () => {},
+}
+
+/**
+ * Application settings
+ * @typedef {BLESettings & WifiSettings & MQTTSettings}
+ */
+export const Settings = {
+  ...BLESettings,
+  ...WifiSettings,
+  ...MQTTSettings,
 }
 
 const preparedStateHandler = {
