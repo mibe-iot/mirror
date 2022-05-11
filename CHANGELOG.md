@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.3.1](https://github.com/mibe-iot/mirror/compare/v1.3.0...v1.3.1) (2022-05-11)
+
+
+### Bug Fixes
+
+* **workflows:** add branches to release workflow ([a9ac8c9](https://github.com/mibe-iot/mirror/commit/a9ac8c9f62e28ff6be9f90146bbc1c29ec6565cf))
+
 ## [1.3.0](https://github.com/mibe-iot/mirror/compare/v1.2.0...v1.3.0) (2022-05-11)
 
 
