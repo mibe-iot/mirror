@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.3.1](https://github.com/mibe-iot/mirror/compare/v1.3.0...v1.3.1) (2022-05-11)
+
+
+### Bug Fixes
+
+* **workflows:** add branches to release workflow ([a9ac8c9](https://github.com/mibe-iot/mirror/commit/a9ac8c9f62e28ff6be9f90146bbc1c29ec6565cf))
+
+## [1.3.0](https://github.com/mibe-iot/mirror/compare/v1.2.0...v1.3.0) (2022-05-11)
+
+
+### Features
+
+* **config:** add BLE app settings ([f289f08](https://github.com/mibe-iot/mirror/commit/f289f08d8bcd35a32882a0618e43713ac8d875de))
+* **main:** integrate pairing module ([1f6900e](https://github.com/mibe-iot/mirror/commit/1f6900e713064a25b1c96bfa4967ea2d0d6b8b24))
+* **pairing:** add pairing module ([7c95701](https://github.com/mibe-iot/mirror/commit/7c9570150e382845c6be11f842364239d475fe38))
+
+
+### Bug Fixes
+
+* **ble:** remove separated module ([a806710](https://github.com/mibe-iot/mirror/commit/a80671050d2ace25483ed3b0e714b845294635cd))
+* **config:** change settings priority ([00d6e4c](https://github.com/mibe-iot/mirror/commit/00d6e4cfa8453e05429f29937b3c4a334d1ff47b))
+
 ## [1.2.0](https://github.com/mibe-iot/mirror/compare/v1.1.0...v1.2.0) (2022-05-11)
 
 
