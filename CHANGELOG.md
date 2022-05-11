@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0-beta.3](https://github.com/mibe-iot/mirror/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2022-05-11)
+
+
+### Features
+
+* **main:** integrate business logic ([faec158](https://github.com/mibe-iot/mirror/commit/faec15823a511a190821ed282875db0fd8182cf2))
+* **pairing:** add Wi-Fi and MQTT connectors ([04d2239](https://github.com/mibe-iot/mirror/commit/04d22395473c77e8c9f977aecb9afe7785fc164e))
+
 ## [2.0.0-beta.2](https://github.com/mibe-iot/mirror/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-11)
 
 
