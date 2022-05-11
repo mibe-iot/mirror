@@ -1,4 +1,6 @@
 import ble from 'ble-peripheral'
+import wifi from 'node-wifi'
+import mqtt from 'mqtt'
 import { Settings } from '../config/index.js'
 
 export class Pairing {
@@ -8,6 +10,11 @@ export class Pairing {
    */
   constructor(config) {
     this.config = config
+    this.config.onWifiPrepared = this.connectToWifi
+    this.config.onMQTTPrepared = this.connectToMQTT
+  }
+
+  start() {
     this.service = new ble(
       process.env.DBUS_SERVICE_NAME,
       process.env.BLE_SERVICE_UUID,
@@ -18,6 +25,30 @@ export class Pairing {
       if (this.service.client.paired !== true) return
       this.config.onBLEConnected()
     })
+  }
+
+  connectToMQTT() {
+    const client = mqtt.connect('mqtt://thinker.local')
+    client.on('connect', () => {
+      this.config.onMQTTConnected(client)
+    })
+  }
+
+  connectToWifi() {
+    wifi.init({
+      iface: null,
+    })
+
+    wifi.connect(
+      {
+        ssid: this.config.SSID,
+        password: this.config.Password,
+      },
+      () => {
+        this.config.WifiConnected = true
+        this.config.onWifiConnected()
+      }
+    )
   }
 
   initializeCharacteristics() {
