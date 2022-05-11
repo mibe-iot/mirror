@@ -63,7 +63,7 @@ const preparedStateHandler = {
       target.WifiPrepared = true
       target.onWifiPrepared()
     }
-    if (target.Identifier && !target.MQTTPrepared) {
+    if (target.Identifier && !target.MQTTPrepared && target.WifiConnected) {
       target.MQTTPrepared = true
       target.onMQTTPrepared()
     }
