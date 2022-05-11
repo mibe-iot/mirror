@@ -1,17 +1,18 @@
 /**
  * Application settings
- * @typedef {WifiSettings & MQTTSettings}
+ * @typedef {BLESettings & WifiSettings & MQTTSettings}
  */
-const settings = {
-  ...MQTTSettings,
+export const Settings = {
+  ...BLESettings,
   ...WifiSettings,
+  ...MQTTSettings,
 }
 
 /**
  * WiFi Application Settings
  * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: WifiSettings.onWifiConnected, SSID: string, Password: string, onWifiPrepared: WifiSettings.onWifiPrepared}}
  */
-const WifiSettings = {
+export const WifiSettings = {
   SSID: '',
   Password: '',
   WifiPrepared: false,
@@ -24,12 +25,23 @@ const WifiSettings = {
  * MQTT Application Settings
  * @type {{Identifier: string, onMQTTPrepared: MQTTSettings.onMQTTPrepared, MQTTConnected: boolean, onMQTTConnected: MQTTSettings.onMQTTConnected, MQTTPrepared: boolean}}
  */
-const MQTTSettings = {
+export const MQTTSettings = {
   Identifier: '',
   MQTTPrepared: false,
   MQTTConnected: false,
   onMQTTPrepared: () => {},
   onMQTTConnected: () => {},
+}
+
+/**
+ * BLE Application Settings
+ * @type {{onBLEConnected: onBLEConnected}}
+ */
+export const BLESettings = {
+  /**
+   * @callback onBLEConnected
+   */
+  onBLEConnected: () => {},
 }
 
 const preparedStateHandler = {
@@ -47,4 +59,4 @@ const preparedStateHandler = {
   },
 }
 
-export const Config = new Proxy(settings, preparedStateHandler)
+export default new Proxy(Settings, preparedStateHandler)
