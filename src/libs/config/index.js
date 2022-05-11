@@ -1,3 +1,5 @@
+import { MqttClient } from 'mqtt'
+
 /**
  * WiFi Application Settings
  * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: onWifiConnected, SSID: string, Password: string, onWifiPrepared: onWifiPrepared}}
@@ -31,8 +33,9 @@ export const MQTTSettings = {
   onMQTTPrepared: () => {},
   /**
    * @callback onMQTTConnected
+   * @param client {MqttClient}
    */
-  onMQTTConnected: () => {},
+  onMQTTConnected: (client) => {},
 }
 
 /**
