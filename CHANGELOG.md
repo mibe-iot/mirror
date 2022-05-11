@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0-beta.3](https://github.com/mibe-iot/mirror/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2022-05-11)
+
+
+### Features
+
+* **main:** integrate business logic ([faec158](https://github.com/mibe-iot/mirror/commit/faec15823a511a190821ed282875db0fd8182cf2))
+* **pairing:** add Wi-Fi and MQTT connectors ([04d2239](https://github.com/mibe-iot/mirror/commit/04d22395473c77e8c9f977aecb9afe7785fc164e))
+
+## [2.0.0-beta.2](https://github.com/mibe-iot/mirror/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-11)
+
+
+### Bug Fixes
+
+* **config:** add Wi-Fi connected option for MQTT prepared ([8062d7f](https://github.com/mibe-iot/mirror/commit/8062d7f8a3fe21af0c229ad0684ad12dfee0eaa5))
+
+## [2.0.0-beta.1](https://github.com/mibe-iot/mirror/compare/v1.3.1...v2.0.0-beta.1) (2022-05-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** added `node-wifi` package for working with Wi-Fi
+
+### Bug Fixes
+
+* **workflows:** add branches to release workflow ([8f09258](https://github.com/mibe-iot/mirror/commit/8f09258e9b93cf046b8c04c34def6e80928c173d))
+
+
+### Build System
+
+* **deps:** add `node-wifi` module ([0d953e6](https://github.com/mibe-iot/mirror/commit/0d953e6115a7fa730640f8ac345bbe6b285a3b6e))
+
 ### [1.3.1](https://github.com/mibe-iot/mirror/compare/v1.3.0...v1.3.1) (2022-05-11)
 
 
