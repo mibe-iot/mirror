@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0-beta.1](https://github.com/mibe-iot/mirror/compare/v1.3.1...v2.0.0-beta.1) (2022-05-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** added `node-wifi` package for working with Wi-Fi
+
+### Bug Fixes
+
+* **workflows:** add branches to release workflow ([8f09258](https://github.com/mibe-iot/mirror/commit/8f09258e9b93cf046b8c04c34def6e80928c173d))
+
+
+### Build System
+
+* **deps:** add `node-wifi` module ([0d953e6](https://github.com/mibe-iot/mirror/commit/0d953e6115a7fa730640f8ac345bbe6b285a3b6e))
+
 ### [1.3.1](https://github.com/mibe-iot/mirror/compare/v1.3.0...v1.3.1) (2022-05-11)
 
 
