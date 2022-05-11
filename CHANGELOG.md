@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0-beta.2](https://github.com/mibe-iot/mirror/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2022-05-11)
+
+
+### Bug Fixes
+
+* **config:** add Wi-Fi connected option for MQTT prepared ([8062d7f](https://github.com/mibe-iot/mirror/commit/8062d7f8a3fe21af0c229ad0684ad12dfee0eaa5))
+
 ## [2.0.0-beta.1](https://github.com/mibe-iot/mirror/compare/v1.3.1...v2.0.0-beta.1) (2022-05-11)
 
 
