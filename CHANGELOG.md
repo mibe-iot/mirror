@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/mibe-iot/mirror/compare/v1.1.0...v1.2.0) (2022-05-11)
+
+
+### Features
+
+* **config:** add callbacks for MQTT and Wi-Fi ([b34e414](https://github.com/mibe-iot/mirror/commit/b34e41467ee82b153cc8a9d109e4e37750a2b6d4))
+
 ## [1.1.0](https://github.com/mibe-iot/mirror/compare/v1.0.0...v1.1.0) (2022-05-11)
 
 
