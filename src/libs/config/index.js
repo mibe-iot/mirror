@@ -1,25 +1,37 @@
 /**
  * WiFi Application Settings
- * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: WifiSettings.onWifiConnected, SSID: string, Password: string, onWifiPrepared: WifiSettings.onWifiPrepared}}
+ * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: onWifiConnected, SSID: string, Password: string, onWifiPrepared: onWifiPrepared}}
  */
 export const WifiSettings = {
   SSID: '',
   Password: '',
   WifiPrepared: false,
   WifiConnected: false,
+  /**
+   * @callback onWifiPrepared
+   */
   onWifiPrepared: () => {},
+  /**
+   * @callback onWifiConnected
+   */
   onWifiConnected: () => {},
 }
 
 /**
  * MQTT Application Settings
- * @type {{Identifier: string, onMQTTPrepared: MQTTSettings.onMQTTPrepared, MQTTConnected: boolean, onMQTTConnected: MQTTSettings.onMQTTConnected, MQTTPrepared: boolean}}
+ * @type {{Identifier: string, onMQTTPrepared: onMQTTPrepared, MQTTConnected: boolean, onMQTTConnected: onMQTTConnected, MQTTPrepared: boolean}}
  */
 export const MQTTSettings = {
   Identifier: '',
   MQTTPrepared: false,
   MQTTConnected: false,
+  /**
+   * @callback onMQTTPrepared
+   */
   onMQTTPrepared: () => {},
+  /**
+   * @callback onMQTTConnected
+   */
   onMQTTConnected: () => {},
 }
 
