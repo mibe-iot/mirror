@@ -8,24 +8,28 @@ const settings = {
 }
 
 /**
- * WiFi Settings
- * @type {{WifiPrepared: boolean, WifiConnected: boolean, SSID: string, Password: string}}
+ * WiFi Application Settings
+ * @type {{WifiPrepared: boolean, WifiConnected: boolean, onWifiConnected: WifiSettings.onWifiConnected, SSID: string, Password: string, onWifiPrepared: WifiSettings.onWifiPrepared}}
  */
 const WifiSettings = {
   SSID: '',
   Password: '',
   WifiPrepared: false,
   WifiConnected: false,
+  onWifiPrepared: () => {},
+  onWifiConnected: () => {},
 }
 
 /**
- * MQTT Settings
- * @type {{Identifier: string, MQTTConnected: boolean, MQTTPrepared: boolean}}
+ * MQTT Application Settings
+ * @type {{Identifier: string, onMQTTPrepared: MQTTSettings.onMQTTPrepared, MQTTConnected: boolean, onMQTTConnected: MQTTSettings.onMQTTConnected, MQTTPrepared: boolean}}
  */
 const MQTTSettings = {
   Identifier: '',
   MQTTPrepared: false,
   MQTTConnected: false,
+  onMQTTPrepared: () => {},
+  onMQTTConnected: () => {},
 }
 
 const preparedStateHandler = {
@@ -33,9 +37,11 @@ const preparedStateHandler = {
     const result = Reflect.set(...arguments)
     if (target.SSID && target.Password && !target.WifiPrepared) {
       target.WifiPrepared = true
+      target.onWifiPrepared()
     }
     if (target.Identifier && !target.MQTTPrepared) {
       target.MQTTPrepared = true
+      target.onMQTTPrepared()
     }
     return result
   },
