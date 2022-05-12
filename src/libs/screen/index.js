@@ -36,11 +36,13 @@ export class Screen {
   initializePairingWindow() {
     this.pairingTable = blessed.table({
       height: '13%',
+      width: '15%',
       top: 'center',
       left: 'center',
       ...defaultStyle,
     })
     this.screen.append(this.pairingTable)
+    this.pairingTable.setLabel('Connections')
     this.pairingStepConfigured('')
   }
 
@@ -53,13 +55,28 @@ export class Screen {
     this.pairingTable.left = '0'
     this.screen.render()
 
-    this.client = client
+    const rpiApiUrl = blessed.text({
+      top: '2%',
+      left: '16%',
+      content:
+        'Raspberry Pi Server Api Endpoint: ' + process.env.RPI_SERVER_API_URL,
+    })
 
-    const infoBox = blessed.box({
-      width: '25%',
-      height: '25%',
+    this.screen.append(rpiApiUrl)
+
+    const infoBox = blessed.log({
+      width: '100%',
+      height: '87%',
       top: '13%',
       ...defaultStyle,
+    })
+
+    client.subscribe('*', (err) => {
+      if (err) console.error(err)
+    })
+
+    client.on('message', (topic, message) => {
+      infoBox.add(`Topic: ${topic}; Message: ${message.toString()}`)
     })
 
     this.screen.append(infoBox)
