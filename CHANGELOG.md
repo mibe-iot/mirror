@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0](https://github.com/mibe-iot/mirror/compare/v2.0.0...v2.1.0) (2022-05-12)
+
+
+### Features
+
+* **screen:** add subscribers & blessed log box ([a9f7ad8](https://github.com/mibe-iot/mirror/commit/a9f7ad8e65db027bb0c7f3fd9414c2f9931daa02))
+* **screen:** create library for screen management ([cdd2e0f](https://github.com/mibe-iot/mirror/commit/cdd2e0f47da1d6aa21f431073e9375ba7f7fbe04))
+* **screen:** create screen library ([#3](https://github.com/mibe-iot/mirror/issues/3)) ([82cf088](https://github.com/mibe-iot/mirror/commit/82cf0884bd6679ce6d9312e10ea0f7ad64e9c53e))
+* **screen:** integrate library for screen management ([42c566c](https://github.com/mibe-iot/mirror/commit/42c566c293475fdc5be21bd573d76967748ffcbe))
+
+
+### Bug Fixes
+
+* **main:** remove mqtt subscribers from connected callback ([d5fd85d](https://github.com/mibe-iot/mirror/commit/d5fd85d28df7812969fd06ef3cb068bf8a095460))
+
 ## [2.0.0](https://github.com/mibe-iot/mirror/compare/v1.3.1...v2.0.0) (2022-05-11)
 
 
