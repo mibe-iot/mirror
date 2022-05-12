@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "ble-peripheral": "github:RuckerGauge/blePeripheral",
+    "blessed": "^0.1.81",
     "dotenv": "^16.0.1",
     "mqtt": "^4.3.7",
     "node-wifi": "^2.0.16"
