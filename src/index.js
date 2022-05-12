@@ -14,12 +14,6 @@ const pairing = new Pairing(config)
  * @param client {MqttClient}
  */
 config.onMQTTConnected = (client) => {
-  client.subscribe('*', (err) => {
-    if (err) console.error(err)
-  })
-  client.on('message', (topic, message) => {
-    console.log(message.toString())
-  })
   screen.pairingStepConfigured('MQTT')
   screen.initializeMqttWindow(client)
 }
