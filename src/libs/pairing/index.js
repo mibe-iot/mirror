@@ -18,7 +18,7 @@ export class Pairing {
     this.service = new ble(
       process.env.DBUS_SERVICE_NAME,
       process.env.BLE_SERVICE_UUID,
-      this.initializeCharacteristics
+      this.initializeCharacteristics.bind(this)
     )
     this.service.on('ConnectionChange', (connected) => {
       if (connected !== true) return
