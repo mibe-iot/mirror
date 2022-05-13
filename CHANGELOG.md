@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.1](https://github.com/mibe-iot/mirror/compare/v2.1.0...v2.1.1) (2022-05-13)
+
+
+### Bug Fixes
+
+* **pairing:** bind this to characteristic initializer ([97e876d](https://github.com/mibe-iot/mirror/commit/97e876df9e1d41e093ee85d721cd05252c8a42a3))
+
 ## [2.1.0](https://github.com/mibe-iot/mirror/compare/v2.0.0...v2.1.0) (2022-05-12)
 
 
