@@ -40,7 +40,7 @@ export class Pairing {
     wifi.connect(
       {
         ssid: this.config.SSID,
-        password: this.config.Password,
+        psk: this.config.Password,
       }).then(() => {
         this.config.WifiConnected = true
         this.config.onWifiConnected()
