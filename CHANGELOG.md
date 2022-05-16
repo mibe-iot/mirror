@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.4](https://github.com/mibe-iot/mirror/compare/v2.1.3...v2.1.4) (2022-05-16)
+
+
+### Bug Fixes
+
+* **env:** add default value for `DBUS_SERVICE_NAME` ([12e766c](https://github.com/mibe-iot/mirror/commit/12e766c07aefabe889a4cc53fdb42138905cc0a4))
+* **resources:** add `dbus` config for application ([c01818b](https://github.com/mibe-iot/mirror/commit/c01818be68140b4a647bcad1a5f281526cbc8548))
+* **screen:** replace `utf8` icons with `ascii` characters ([de53255](https://github.com/mibe-iot/mirror/commit/de53255f34f4f0771d4e2081823b29c3b0cc5db5))
+
 ### [2.1.3](https://github.com/mibe-iot/mirror/compare/v2.1.2...v2.1.3) (2022-05-16)
 
 
