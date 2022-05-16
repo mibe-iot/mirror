@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.3](https://github.com/mibe-iot/mirror/compare/v2.1.2...v2.1.3) (2022-05-16)
+
+
+### Bug Fixes
+
+* **pairing:** replace `password` with `psk` ([db99c7f](https://github.com/mibe-iot/mirror/commit/db99c7f937a0a199fc9f9f695b66e097397f1d8f))
+
 ### [2.1.2](https://github.com/mibe-iot/mirror/compare/v2.1.1...v2.1.2) (2022-05-16)
 
 
