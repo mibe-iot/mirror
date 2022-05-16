@@ -1,5 +1,5 @@
 import ble from 'ble-peripheral'
-import wifi from 'node-wifi'
+import Wifi from 'rpi-wifi-connection'
 import mqtt from 'mqtt'
 import { Settings } from '../config/index.js'
 
@@ -10,8 +10,8 @@ export class Pairing {
    */
   constructor(config) {
     this.config = config
-    this.config.onWifiPrepared = this.connectToWifi
-    this.config.onMQTTPrepared = this.connectToMQTT
+    this.config.onWifiPrepared = this.connectToWifi.bind(this)
+    this.config.onMQTTPrepared = this.connectToMQTT.bind(this)
   }
 
   start() {
@@ -35,16 +35,13 @@ export class Pairing {
   }
 
   connectToWifi() {
-    wifi.init({
-      iface: null,
-    })
+    const wifi = new Wifi()
 
     wifi.connect(
       {
         ssid: this.config.SSID,
         password: this.config.Password,
-      },
-      () => {
+      }).then(() => {
         this.config.WifiConnected = true
         this.config.onWifiConnected()
       }
