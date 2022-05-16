@@ -25,9 +25,9 @@ export class Screen {
       pairingSteps.map((value) => {
         if (!flag) {
           if (value === step) flag = true
-          return [value, '✓']
+          return [value, '+']
         }
-        return [value, '✕']
+        return [value, '-']
       })
     )
     this.screen.render()
