@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.2](https://github.com/mibe-iot/mirror/compare/v2.1.1...v2.1.2) (2022-05-16)
+
+
+### Bug Fixes
+
+* **pairing:** shared context ([d60f334](https://github.com/mibe-iot/mirror/commit/d60f334adf654aeda246dbe6a6707950dd5cf0ca))
+
 ### [2.1.1](https://github.com/mibe-iot/mirror/compare/v2.1.0...v2.1.1) (2022-05-13)
 
 
