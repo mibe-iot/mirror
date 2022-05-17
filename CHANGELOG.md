@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.5](https://github.com/mibe-iot/mirror/compare/v2.1.4...v2.1.5) (2022-05-17)
+
+
+### Bug Fixes
+
+* **pairing:** remove ble paired attribute ([1556bd9](https://github.com/mibe-iot/mirror/commit/1556bd98af5dbef5a4c431424e480ceb2aba7e68))
+* **screen:** mqtt subscribe to all ([b328787](https://github.com/mibe-iot/mirror/commit/b328787dd2f0d5ab3103bf84a1cce698b6617050))
+
 ### [2.1.4](https://github.com/mibe-iot/mirror/compare/v2.1.3...v2.1.4) (2022-05-16)
 
 
