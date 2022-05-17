@@ -71,7 +71,7 @@ export class Screen {
       ...defaultStyle,
     })
 
-    client.subscribe('*', (err) => {
+    client.subscribe('#', (err) => {
       if (err) console.error(err)
     })
 
