@@ -22,7 +22,6 @@ export class Pairing {
     )
     this.service.on('ConnectionChange', (connected) => {
       if (connected !== true) return
-      if (this.service.client.paired !== true) return
       this.config.onBLEConnected()
     })
   }
